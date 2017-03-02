@@ -1,6 +1,6 @@
 # Tensorflow ITP Flyby
 
-We will learn how to use Tensorflow to retrain Google's visual recognition model, Inception, to recognize between 5 different dog kinds (and show how you can use the same process to recognize between any visual categories that you want).
+We will learn how to use Tensorflow to retrain Google's visual recognition model, Inception, to recognize between 5 different dog kinds (and how you can use the same process to recognize between any visual categories that you want).
 
 ## Follow along
 
@@ -59,7 +59,7 @@ $ cd ~/
 $ git clone https://github.com/agermanidis/tf-flyby
 ```
 
-We need a way to access our dog images inside our Docker container. To do that, we will run docker with the `-v` argument, which will allow us to map a directory in our machine to a directory inside our Docker container container.
+We need a way to access our dog images inside our Docker container. To do that, we will run docker with the `-v` argument, which will allow us to map a directory in our machine to a directory inside our Docker container.
 
 ```
 $ docker run -it -v ~/tf-flyby:/tf-flyby gcr.io/tensorflow/tensorflow:latest-devel
