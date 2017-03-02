@@ -114,3 +114,17 @@ redbone (score = 0.00153)
 ```
 
 Congratulations! You trained your first object recognition network. You can now repeat the same process to recognize anything you want. You just need to download a bunch of images for every category (at least 100 per category is recommended), build a directory structure like the one in the `dogs` folder, and run the retraining script.
+
+## Cool models to use (that you don't have to understand)
+
+[char-rnn: Generate text based on examples with recurrent neural networks (like Markov chains, but better)](https://github.com/sherjilozair/char-rnn-tensorflow)
+
+[neural-style: Style transfer (Van Gogh selfies etc)](https://github.com/anishathalye/neural-style)
+
+[neural-doodle: Like style transfer, but better](https://github.com/alexjc/neural-doodle)
+
+[DenseCap: Image captioning](https://github.com/jcjohnson/densecap)
+
+[pix2pix: Image-to-Image translation](https://github.com/phillipi/pix2pix)
+
+[ppgn: Generate images of things](https://github.com/Evolving-AI-Lab/ppgn)
