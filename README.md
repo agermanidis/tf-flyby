@@ -68,7 +68,7 @@ $ docker run -it -v ~/tf-flyby:/tf-flyby gcr.io/tensorflow/tensorflow:latest-dev
 Confirm that you can access the directory from within the container:
 ```
 $ ls /tf-flyby/
-README.md  bottlenecks  dogs  inception  label_image.py  retrained_graph.pb  retrained_labels.txt
+README.md  dogs  label_image.py
 ```
 
 Before starting the training, let's ensure that we have the latest version of Tensorflow inside the container:
@@ -86,7 +86,7 @@ $ python tensorflow/examples/image_retraining/retrain.py --bottleneck_dir=/tf-fl
 While we wait for the retraining to finish, let's unpack the arguments of the command:
 * `bottleneck_dir`: Since we are only training the last layer of our Inception network, which is called the bottleneck, we can safely cache the output of the network for every image up until the last layer, to speed up the training process. This cache is what's stored in `bottleneck_dir`.
 * `how_many_training_steps`: Specifies the number of training iterations that our retraining process goes through. Since we have a small training set, we can keep this to a low value of `500`, but the recommended default is `4000`.
-* `model_dir`: Specifies where the trained network is stored.
+* `model_dir`: Specifies where the Inception network is stored.
 * `output_graph`: Specifies where the specification of the network, i.e. the graph of operations that the network performs, is stored.
 * `output_labels`: Specifies where the labels that our network can recognize, which in this case will be our 5 dog kinds (basset, bluetick, borzoi, chihuahua, redbone), will be stored.
 * `image_dir`: Specifies the image directory where our training data is stored.
