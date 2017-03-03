@@ -80,7 +80,7 @@ $ git pull
 We're finally ready to run the retraining script to create a model that can recognize between the different dog kinds:
 
 ```
-$ python tensorflow/examples/image_retraining/retrain.py --bottleneck_dir=/tf-flyby/bottlenecks --how_many_training_steps 500 --model_dir=/tf-flyby/inception --output_graph=/tf_files/retrained_graph.pb --output_labels=/tf-flyby/retrained_labels.txt --image_dir=/tf-flyby/dogs
+$ python tensorflow/examples/image_retraining/retrain.py --bottleneck_dir=/tf-flyby/bottlenecks --how_many_training_steps 500 --model_dir=/tf-flyby/inception --output_graph=/tf-flyby/retrained_graph.pb --output_labels=/tf-flyby/retrained_labels.txt --image_dir=/tf-flyby/dogs
 ```
 
 While we wait for the retraining to finish, let's unpack the arguments of the command:
