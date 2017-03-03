@@ -100,6 +100,7 @@ We can now put our newly trained model to use! Copy this cute borzoi to our `tf-
 ...and run the `label_image.py` script on it:
 
 ```
+$ cd /tf-flyby
 $ python label_image.py 36_m.jpg
 ```
 
